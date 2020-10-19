@@ -1,0 +1,310 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    width: 100%
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.header{
+    background-color:#094074;
+}
+header img{
+    width: 40px;
+    height: auto;
+}
+header li{
+    padding-right: 5px;
+    padding-top: 10px;  
+}
+header li:first-child{
+    padding-top: 0;
+}
+header li:last-child{
+    margin-bottom: 0;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.flexMenu{
+    display: flex;
+    justify-content: space-between;
+}
+button.timesButton{
+    margin-top: 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.menu{
+    height: 0;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.dropDownMenu {
+    margin-top: 0;
+    height: 100px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+/*slider */
+.slider{
+	position: relative;
+	width: 100vw;
+	height: 50vh;
+	max-width: 80rem;
+	margin: auto;
+	overflow: hidden;
+}
+.slide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.sliderImg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide.current{
+	opacity: 1;
+}
+.slide .content{
+    position: absolute;
+    bottom: 5px;
+    color: #333;
+    background-color: rgba(225,225,225, 0.8);
+    padding: 10px 5px 10px 5px;
+    left: -300px;
+    width: 300px;
+    opacity: 0;
+
+}
+.slide.current .content{
+    opacity: 1;
+    transform: translateX(300px);
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.slide .content h1{
+	margin: 0;
+}
+.sliderButton button.prev{
+    position: absolute;
+    left: 5px;
+    top: 23vh;
+}
+.sliderButton button.next{
+    position: absolute;
+    right: 5px;
+    top: 23vh;
+}
+.sliderButton button{
+    background: white;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    padding: 4px 6px 4px 6px;
+}
+
+/* Our Company */
+.ourCompany{
+    text-align: center;
+    margin: 7px;
+}
+.ourCompany p{
+    text-align: left;
+}
+.ourCompany h1{
+    color: white;
+    background-color: #094074;
+    display: inline-block;
+    margin-bottom: 7px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+}
+.ourCompany h2, .mission h2{
+    margin-bottom: 4px;
+    color: #3C6997;
+}
+.ourCompany strong{
+    color: #094074;
+}
+
+/* Reviews */
+.reviews{
+    position: relative;
+    height: 50vh;
+    width: 70vw;
+    margin: auto;
+    max-width: 80rem;
+    background-color:rgba(0, 0, 0, .8);
+    border-radius: 7px;
+    margin: 5px auto 20px auto;
+}
+.firstReview{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.firstReview h1:first-child{
+    color: white;
+    margin: 5px;
+    padding: 10px 0 10px 0;
+}
+.firstReview .name{
+    color: #fff;
+    margin: 5px;
+}
+.reviewImg{
+    height: 20vh;
+    width: 30vw;
+    border-radius: 50%;
+}
+.reviews .button{
+    text-align: center;
+}
+button.rPrev{
+    font-size: 18px;
+    position: absolute;
+    bottom: 5px;
+    left: 38%;
+}
+button.rNext{
+    font-size: 18px;
+    position: absolute;
+    right: 38%;
+    bottom: 5px;
+}
+.reviews button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}
+.job{
+    color: silver;
+}
+.comment{
+    color: silver;
+}
+.mission, .sub, .address, .c, .ourCustomer{
+    text-align: center;
+}
+.address h2, .sub h1, .ourCustomer h2{
+    text-align: center;
+    color: #3C6997;
+}
+.address address, .address p{
+    color: #333;
+    text-align: center;
+}
+.ourCustomer h2{
+    margin: 14px 0 0 0;
+}
+/* suscribe to our outlet */
+.subForm{
+    display: flex;
+    margin-bottom: 6px;
+}
+.subForm input{
+    flex: 1;
+}
+.subForm button{
+    border: 0;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+}
+/* sticky footer */
+html, body{
+    height: 100%;
+}
+.main{
+    min-height: 100%;
+}
+.stickyFooter{
+    overflow: auto;
+    padding-bottom: 50px;
+}
+/* footer */
+.footer{
+    position: relative;
+    margin-top: -50px;
+    height: 50px;
+    background-color: #094074;
+    clear: both;
+}
+.c{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media(min-width: 768px){
+    body{
+        font-size: 18px;
+    }
+    .headerFlex{
+        padding: 15px 0 15px 0;
+    }
+    header nav li a{
+        font-size: 18px;
+    }
+    .timesButton{
+        display: none;
+    }
+    .menu{
+        height: 100%;
+        display: flex;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .menu li{
+        padding-right: 20px;
+    }
+    .headerFlex{
+        display: flex;
+        justify-content: space-between;
+    }
+    header li:first-child{
+        padding-top: 10px;
+    }
+    header img{
+        width: 66px;
+        height: auto;
+    }
+    .reviews{
+        width: 40%;
+    }
+    .reviewImg{
+        width: 150px;
+        height: 20vh;
+        border-radius: 50%;
+    }
+    .sub{
+        width: 60%;
+        margin: auto;
+    }
+}

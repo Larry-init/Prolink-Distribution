@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    width: 100%
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.header{
+    background-color:#094074;
+}
+header img{
+    width: 40px;
+    height: auto;
+}
+header li{
+    padding-right: 5px;
+    padding-top: 10px;  
+}
+header li:first-child{
+    padding-top: 0;
+}
+header li:last-child{
+    margin-bottom: 0;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.flexMenu{
+    display: flex;
+    justify-content: space-between;
+}
+button.timesButton{
+    margin-top: 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.menu{
+    height: 0;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.dropDownMenu {
+    margin-top: 0;
+    height: 100px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+/* Get in touch */
+.touch{
+    position: relative;
+}
+.inTouch{
+    position: absolute;
+    bottom: 20px;
+    left: 30%;
+}
+.inTouch h2{
+    color: #094074;
+    background: rgba(225, 225, 225, 0.8);
+    border-radius: 20px;
+    padding: 7px 15px 7px 15px;
+}
+.getInTouch{
+    padding: 5px 20px;
+    background-color: rgba(211, 211, 211, 0.3);
+    text-align: center;
+}
+.contactImg{
+    height: 30vh;
+    width: 100vw;  
+}
+
+/* Form for contact */
+form{
+    margin: 20px;
+}
+.required:after, .message p:after, .select label:after{
+    content:"*";
+    color: red;
+}
+.message{
+    display: flex;
+}
+.message textarea{
+    flex: 1;
+}
+.email{
+    display: flex;
+    margin-bottom: 8px;
+}
+.email input{
+    flex: 1;
+}
+.fName{
+    display: flex;
+    margin-bottom: 8px;
+}
+.fName input{
+    flex: 1;
+}
+.lName{
+    display: flex;
+    margin-bottom: 8px;
+}
+.lName input{
+    flex: 1;
+}
+.select{
+    display: flex;
+    margin-bottom: 8px;
+}
+.select select{
+    flex: 1;
+}
+.button button{
+    color: white;
+    background-color: red;
+    font-size: 16px;
+    border: none;
+    padding: 7px;
+    margin-top: 4px;
+    border-radius: 4px;
+}
+
+/* contact us */
+.contact{
+    text-align: center;
+}
+.contact h2{
+    display: inline-block;
+    color: white;
+    background-color: #094074;
+    padding: 5px 10px 5px 10px;
+    margin: 7px 0 7px 0;
+    border-radius: 20px;
+}
+/* footer at the bottom of the page */
+html, body{
+    height: 100%;
+}
+#container{
+    min-height: 100%;
+}
+.main{
+    padding-bottom: 50px;
+}
+/* footer */
+.footer{
+    height: 50px;
+    background-color: #094074;
+    position: relative;
+    margin-top: -50px; 
+    clear: both;
+}
+.c{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media(min-width: 768px){
+    body{
+        font-size: 18px;
+    }
+    .headerFlex{
+        padding: 15px 0 15px 0;
+    }
+    header nav li a{
+        font-size: 18px;
+    }
+    .timesButton{
+        display: none;
+    }
+    .menu{
+        height: 100%;
+        display: flex;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .menu li{
+        padding-right: 20px;
+    }
+    .headerFlex{
+        display: flex;
+        justify-content: space-between;
+    }
+    header li:first-child{
+        padding-top: 10px;
+    }
+    header img{
+        width: 66px;
+        height: auto;
+    }
+    .contactImg{
+        height: 50vh;
+        width: 100vw;  
+    }
+    /* get in touch */
+    .inTouch{
+        bottom: 20px;
+        left: 45%;
+    }
+
+    /* Flex contact  */
+    .flexContact{
+        display: flex;
+        justify-content: space-between;
+    }
+    .flexContact section:first-child{
+        flex: 2;
+    }
+}

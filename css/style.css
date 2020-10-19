@@ -1,0 +1,340 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    width: 100%
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.header{
+    background-color:#094074;
+}
+header img{
+    width: 40px;
+    height: auto;
+}
+header li{
+    padding-right: 5px;
+    padding-top: 10px;  
+}
+header li:first-child{
+    padding-top: 0;
+}
+header li:last-child{
+    margin-bottom: 0;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.flexMenu{
+    display: flex;
+    justify-content: space-between;
+}
+button.timesButton{
+    margin-top: 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.menu{
+    height: 0;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.dropDownMenu {
+    margin-top: 0;
+    height: 100px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+/*slider */
+.slider{
+	position: relative;
+	width: 100vw;
+	height: 50vh;
+	max-width: 80rem;
+	margin: auto;
+	overflow: hidden;
+}
+.slide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.sliderImg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide.current{
+	opacity: 1;
+}
+.slide .content{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: #333;
+    background-color: rgba(225,225,225, 0.8);
+    padding: 10px 5px 10px 5px;
+    left: -300px;
+    width: 300px;
+    opacity: 0;
+
+}
+.slide.current .content{
+    opacity: 1;
+    transform: translateX(300px);
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.slide .content h1{
+	margin: 0;
+}
+.sliderButton button.prev{
+    position: absolute;
+    left: 5px;
+    top: 23vh;
+}
+.sliderButton button.next{
+    position: absolute;
+    right: 5px;
+    top: 23vh;
+}
+.sliderButton button{
+    background: white;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    padding: 4px 6px 4px 6px;
+}
+
+    /* styling text and font awesome icons */
+.welcome h1,.getFree h1,.whyUs h1, .ourService, .subscribe h1{
+    color: #3C6997;
+    text-align: center;
+    margin-top: 4px;
+}
+.welcome p, .getFree p,.whyUs p{
+    color: #333;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.building, .getFreeIcon, .whyUsIcon{
+    padding: 7px;
+    text-align: center;
+    color: #FE9000;
+}
+.progressBar{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 20px 40px;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    box-shadow: 0 10px 20px rgba(0,0,0, .5);
+}
+.flexProg{
+    display: flex;
+    justify-content: space-between;
+}
+.serviceDel h3{
+    color: #A9A9A9;
+}
+.loading{
+    position: relative;
+    margin-top: 5px;
+    align-items: center;
+    display: inline-block;
+    width: 90%;
+    height: 10px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+.loading:after{
+    position: absolute;
+    content: '';
+    animation-name: progress-bar;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    height: 100%;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+.second:after{
+    animation-delay: 2s;
+}
+.third:after{
+    animation-delay: 3s;
+}
+.forth:after{
+    animation-delay: 4s;
+}
+.fifth:after{
+    animation-delay: 5s;
+}
+@keyframes progress-bar{
+    0%{
+        width: 0%;
+        background-color: #094074;
+    }
+    50%{
+        width: 70%;
+        background-color: #094074;
+    }
+    100%{
+        width: 100%;
+        background-color: #094074;
+    }
+}
+
+.ceoReview{
+    width: 80vw;
+    height: 40vh;
+    margin-top: 30px;
+    background-color: rgba(211,211,211, .2);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.ceoName{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+.ceoQoute{
+    text-align: center;
+    color: #333;
+}
+.ceo{
+    text-align: center;
+    color: #333;
+}
+.ceoReview .ceoImg{
+    width: 150px;
+    height: 20vh;
+    border-radius: 50%;
+}
+/* Subscribe to our news outlet */
+.subscribe{
+    margin-top: 10px;
+}
+.subscribe h1{
+    color: #c0c0c0;
+}
+.subForm{
+    display: flex;
+}
+.subForm input{
+    flex: 1;
+}
+.subForm button{
+    border: 0;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+}
+.address{
+    margin-top: 20px;
+}
+.address h2{
+    text-align: center;
+    color: #3C6997;
+}
+.address address, .address p{
+    color: #333;
+    text-align: center;
+}
+
+
+/* footer */
+.footer{
+    height: 50px;
+    background-color: #094074;
+    margin-top: 10px;
+}
+.c{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media(min-width: 768px){
+    body{
+        font-size: 18px;
+    }
+    .headerFlex{
+        padding: 15px 0 15px 0;
+    }
+    header nav li a{
+        font-size: 18px;
+    }
+    .timesButton{
+        display: none;
+    }
+    .menu{
+        height: 100%;
+        display: flex;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .menu li{
+        padding-right: 20px;
+    }
+    .headerFlex{
+        display: flex;
+        justify-content: space-between;
+    }
+    header li:first-child{
+        padding-top: 10px;
+    }
+    header img{
+        width: 66px;
+        height: auto;
+    }
+    .slider{
+        max-width: 100%;
+        height: 62vh;
+    }
+    .sliderButton button.prev{
+        top: 40vh;
+    }
+    .sliderButton button.next{
+        top: 40vh;
+    }
+    .review{
+        margin-top: 40px;
+    }
+    .ceoReview .ceoImg{
+        width: 150px;
+        height: 20vh;
+        border-radius: 50%;
+    }
+    .sub, .allProgBar, .ceoReview{
+        width: 60%;
+        margin: auto;
+    }
+}
