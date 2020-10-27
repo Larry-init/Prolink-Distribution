@@ -12,7 +12,7 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
 }
@@ -150,13 +150,14 @@ button.timesButton{
 /* Reviews */
 .reviews{
     position: relative;
-    height: 50vh;
+    height: 100%;
     width: 70vw;
     margin: auto;
     max-width: 80rem;
-    background-color:rgba(0, 0, 0, .8);
+    background-color:rgba(0, 0, 0, .9);
     border-radius: 7px;
     margin: 5px auto 20px auto;
+    padding-bottom: 60px;
 }
 .firstReview{
     height: 100%;
@@ -184,13 +185,19 @@ button.rPrev{
     font-size: 18px;
     position: absolute;
     bottom: 5px;
-    left: 38%;
+    left: 30%;
+}
+button.rPrev:hover{
+    color: silver;
 }
 button.rNext{
     font-size: 18px;
     position: absolute;
-    right: 38%;
+    right: 30%;
     bottom: 5px;
+}
+button.rNext:hover{
+    color: silver;
 }
 .reviews button{
     background-color: transparent;
@@ -260,6 +267,9 @@ html, body{
 }
 
 @media(min-width: 768px){
+    .container{
+        width: 80%;
+    }
     body{
         font-size: 18px;
     }
