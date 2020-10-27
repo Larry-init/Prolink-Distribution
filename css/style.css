@@ -105,6 +105,9 @@ button.timesButton{
 .slide .content h1{
 	margin: 0;
 }
+.sliderButton button{
+    position: relative;
+}
 .sliderButton button.prev{
     position: absolute;
     left: 5px;
