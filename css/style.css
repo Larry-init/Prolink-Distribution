@@ -92,7 +92,7 @@ button.timesButton{
     background-color: rgba(225,225,225, 0.8);
     padding: 10px 5px 10px 5px;
     left: -300px;
-    width: 200px;
+    width: 10px;
     opacity: 0;
 }
 .slide.current .content{
@@ -340,6 +340,6 @@ button.timesButton{
     /* Further modification */
     
     .slide .content{
-        width: 300px;
+        width: 400px;
     }
 }
