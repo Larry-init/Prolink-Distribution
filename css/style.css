@@ -92,9 +92,8 @@ button.timesButton{
     background-color: rgba(225,225,225, 0.8);
     padding: 10px 5px 10px 5px;
     left: -300px;
-    width: 300px;
+    width: 200px;
     opacity: 0;
-
 }
 .slide.current .content{
     opacity: 1;
@@ -336,5 +335,11 @@ button.timesButton{
     .sub, .allProgBar, .ceoReview{
         width: 60%;
         margin: auto;
+    }
+
+    /* Further modification */
+    
+    .slide .content{
+        width: 300px;
     }
 }
